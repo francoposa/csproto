@@ -125,7 +125,7 @@ func doGenerate(opts *options) func(*protogen.Plugin) error {
 		plugin.SupportedFeatures |= uint64(pluginpb.CodeGeneratorResponse_FEATURE_PROTO3_OPTIONAL)
 		plugin.SupportedFeatures |= uint64(pluginpb.CodeGeneratorResponse_FEATURE_SUPPORTS_EDITIONS)
 		plugin.SupportedEditionsMinimum = descriptorpb.Edition_EDITION_2023
-		plugin.SupportedEditionsMaximum = descriptorpb.Edition_EDITION_2023
+		plugin.SupportedEditionsMaximum = descriptorpb.Edition_EDITION_2024
 
 		for _, protoFile := range plugin.Files {
 			if !protoFile.Generate {
