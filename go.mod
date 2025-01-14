@@ -1,4 +1,4 @@
-module github.com/CrowdStrike/csproto
+module github.com/francoposa/csproto
 
 go 1.21
 
