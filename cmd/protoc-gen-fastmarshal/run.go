@@ -122,6 +122,7 @@ func doGenerate(opts *options) func(*protogen.Plugin) error {
 		}
 
 		plugin.SupportedFeatures |= uint64(pluginpb.CodeGeneratorResponse_FEATURE_PROTO3_OPTIONAL)
+		plugin.SupportedFeatures |= uint64(pluginpb.CodeGeneratorResponse_FEATURE_SUPPORTS_EDITIONS)
 
 		for _, protoFile := range plugin.Files {
 			if !protoFile.Generate {
